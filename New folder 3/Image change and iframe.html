@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+body{
+background-image: url("5.jpg") ;
+background-size:100%   
+}
+#div1{
+ width:30%;
+ height:400px;  
+ background-color: rgb(241, 199, 9) ;
+margin-left: 35%;
+margin-top: 8%;
+border-radius:100%;
+border:7px solid rgb(70, 11, 70);
+
+}
+#Java{
+    width:250px;
+ height:250px;
+ border-radius: 20%;
+margin-left:17% ;
+margin-top:17%;
+border:7px solid rgb(170, 15, 157);
+
+}
+button{
+    font-size:18px ;
+    padding:10px ;
+   border: 3px outset wheat;
+background-color: rgb(241, 199, 9) ;
+border-radius:50%; 
+}
+#bu{
+    margin-left: 10%
+}
+#div2{
+    width:60% ;
+    height:650px ;
+    background-color: deepskyblue;
+margin-top: 7%;
+margin-left:14% ;
+padding-left:13%
+
+}
+#page1{
+    font-size:18px ;
+    padding:10px ;
+   border: 3px outset wheat;
+background-color: rgb(241, 199, 9) ;
+border-radius:50%; 
+}   
+#id{
+    font-size:18px ;
+    padding:10px ;
+   border: 3px outset wheat;
+background-color: rgb(241, 199, 9) ;
+border-radius:50%; 
+margin-left:29%     
+}
+#dd{
+    font-size:18px ;
+    padding:10px ;
+   border: 3px outset wheat;
+background-color: rgb(241, 199, 9) ;
+border-radius:50%; 
+   
+}
+
+</style>
+<body>
+<button id="bu" type="button" onclick="change(1)">First image</button>
+<button type="button" onclick="change(2)">Second image</button>
+<button type="button" onclick="change(3)">Third image</button>
+<button type="button" onclick="change(4)">Fourth image</button>
+<button type="button" onclick="change(5)">Fifth image</button>
+<button type="button" onclick="change(6)">Sixth image</button>
+<button type="button" onclick="change(7)">Seventh image</button>
+<button type="button" onclick="change(8)">Eight image</button>
+
+<div id="div1">
+    <img id="Java" src="1.jpg" alt="image">
+</div>
+
+<script>
+function change(click){
+    var image;
+if(click==1){
+   image="2.jpg";
+}
+else if(click==2){
+   image="3.jpg";
+}
+else if(click==3){
+   image="4.jpg";
+}
+else if(click==4){
+   image="5.jpg";
+}
+else if(click==5){
+   image="6.jpg";
+}
+else if(click==6){
+   image="7.jpg";
+}
+else if(click==7){
+   image="8.jpg";
+}
+else if(click==8){
+   image="4.jpg";
+}
+document.getElementById("Java").src=image;
+}
+</script>
+<hr style="height:2px;background-color:black;">
+<div id="div2"><br><br><br>
+
+  <iframe src="not.txt"name="Addresses" style="width:80%;height:450px ;"></iframe> <br> 
+<a href="Page1.html" target="Addresses"><button id="id">page1</button></a>
+
+<a href="Page2.html" target="Addresses"><button id="dd">page2</button></a>
+
+</div> 
+</body>
+</html>
